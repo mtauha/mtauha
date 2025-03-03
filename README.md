@@ -1,5 +1,5 @@
 # 💫 About Me:
-I'm currently working on Data Engineering python frameworks as well as some cybersecurity things <br>I'm looking to collaborate on any backend fastapi, web scrapping, ETL/ELT pipelines and any cybersecurity realted projects<br>I'm looking for help regarding some blockchain resources and projects, some advance ELT/ETL pipelines, Intermediate cybersecurity related projects<br>I'm currently learning AWS/GCP Cloud security, Cloud Management, Data pipelines, warehousing, and pentesting<br>
+I'm currently working on Data Engineering python frameworks as well as some cybersecurity things <br>I'm looking to collaborate on any backend fastapi, web scrapping, ETL/ELT pipelines.<br>I'm looking for help regarding some blockchain resources and projects, some advance ELT/ETL pipelines, Intermediate cybersecurity related projects<br>I'm currently learning AWS/GCP Cloud security, Cloud Management, Data pipelines, warehousing, and pentesting<br>
 
 
 ## 🌐 Socials:
