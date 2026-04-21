@@ -29,7 +29,7 @@ Data Engineer focused on building scalable ETL/ELT pipelines and backend systems
   <img src="https://leetcode-badge-showcase.vercel.app/api?username=MuhammadTauha&theme=dark&animated=true" alt="LeetCode Badges"/>
 </div>
 
----
+## 🐍 Contributions:
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=mtauha&color=grey&style=flat&label=profile+views"/>
+  <img src="https://raw.githubusercontent.com/mtauha/mtauha/output/github-snake-dark.svg" alt="Snake animation"/>
 </div>
