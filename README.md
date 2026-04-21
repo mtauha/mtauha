@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=FFFFFF&center=true&width=500&lines=Data+Engineer;Python+%7C+FastAPI+%7C+Cloud;ETL+Pipelines+%26+Backend+Systems" alt="Typing SVG"/>
+</div>
+
 # 💫 About Me:
 Data Engineer focused on building scalable ETL/ELT pipelines and backend systems with Python and FastAPI. Currently exploring cloud security on AWS and GCP. Open to collaborating on data engineering, backend development, and web scraping projects.
 
@@ -27,5 +31,5 @@ Data Engineer focused on building scalable ETL/ELT pipelines and backend systems
 
 ---
 <div align="center">
-  <a href="https://visitcount.itsvg.in"><img src="https://visitcount.itsvg.in/api?id=mtauha&icon=10&color=0"/></a>
+  <img src="https://komarev.com/ghpvc/?username=mtauha&color=grey&style=flat&label=profile+views"/>
 </div>
