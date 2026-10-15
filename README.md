@@ -2,7 +2,7 @@
 
 **Data & AI Engineer**: I build data pipelines, APIs and LLM tooling, and ship them as open-source products people actually use.
 
-My main project is **[psxdata](https://github.com/psxdata)**, an open-source data platform for the Pakistan Stock Exchange. It runs end to end: a Python SDK that scrapes and cleans market data, a public REST API, a dbt warehouse on BigQuery, and an MCP server that lets AI assistants analyse the market with SQL.
+My main project is **[psxdata](https://github.com/psxdata)**, an open-source data platform for the Pakistan Stock Exchange. It runs end to end: a Python SDK that delivers clean, typed market data, a public REST API, a dbt warehouse on BigQuery, and an MCP server that lets AI assistants analyse the market with SQL.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/mtauha)
 [![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@muhammad.tauha)
@@ -23,7 +23,7 @@ My main project is **[psxdata](https://github.com/psxdata)**, an open-source dat
 
 ```mermaid
 flowchart LR
-    PSX[(PSX website)] --> SDK[psxdata<br/>Python SDK]
+    SDK[psxdata<br/>Python SDK]
     SDK --> API[psxdata-api<br/>FastAPI REST]
     SDK --> WH[psx-warehouse<br/>dbt + BigQuery]
     SDK --> MCP[psxdata-mcp<br/>MCP server + DuckDB]
@@ -39,7 +39,7 @@ flowchart LR
 
 Historical OHLCV, live quotes, index constituents, sectors, fundamentals, debt market and margin-eligible stocks for 1,000+ PSX tickers, returned as pandas DataFrames.
 
-- Parses columns dynamically from the HTML, so it survives PSX layout changes that break other scrapers
+- Schema-tolerant parsing and multi-format date handling, so data stays consistent when upstream formats change
 - Disk cache, retries with exponential backoff, rate limiting and proxy support (HTTP / SOCKS5)
 - About 9,000 PyPI downloads a month
 
@@ -80,5 +80,5 @@ Docs for the whole platform: **[psxdata.mintlify.app](https://psxdata.mintlify.a
 | **Languages** | Python, SQL, Go, TypeScript |
 | **Data** | dbt, BigQuery, DuckDB, MotherDuck, PostgreSQL, pandas |
 | **AI** | Model Context Protocol (MCP), LLM agents & tool use, Claude |
-| **Backend** | FastAPI, REST API design, web scraping |
+| **Backend** | FastAPI, REST API design |
 | **Cloud & DevOps** | GCP (Cloud Run, Cloud Scheduler), AWS, Terraform, Docker, GitHub Actions |
