@@ -1,35 +1,84 @@
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=FFFFFF&center=true&width=500&lines=Data+Engineer;Python+%7C+FastAPI+%7C+Cloud;ETL+Pipelines+%26+Backend+Systems" alt="Typing SVG"/>
-</div>
+## Hi, I'm Muhammad Tauha
 
-# 💫 About Me:
-Data Engineer focused on building scalable ETL/ELT pipelines and backend systems with Python and FastAPI. Currently exploring cloud security on AWS and GCP. Open to collaborating on data engineering, backend development, and web scraping projects.
+**Data & AI Engineer**: I build data pipelines, APIs and LLM tooling, and ship them as open-source products people actually use.
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/mtauha) [![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@muhammad.tauha) [![LeetCode](https://img.shields.io/badge/LeetCode-%23FFA116.svg?logo=leetcode&logoColor=white)](https://leetcode.com/u/MuhammadTauha/)
+My main project is **[psxdata](https://github.com/psxdata)**, an open-source data platform for the Pakistan Stock Exchange. It runs end to end: a Python SDK that scrapes and cleans market data, a public REST API, a dbt warehouse on BigQuery, and an MCP server that lets AI assistants analyse the market with SQL.
 
-# 💻 Tech Stack:
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white) ![BigQuery](https://img.shields.io/badge/BigQuery-%23669DF6.svg?style=for-the-badge&logo=googlebigquery&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/mtauha)
+[![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@muhammad.tauha)
+[![Email](https://img.shields.io/badge/Email-0078D4?logo=microsoftoutlook&logoColor=white)](mailto:muhammad.tauha@outlook.com)
 
-# 📊 GitHub Stats:
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mtauha&theme=dark&hide_border=false&include_all_commits=false&count_private=true"/><br/><br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mtauha&theme=dark&hide_border=false"/><br/><br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mtauha&theme=dark&hide_border=false&include_all_commits=false&count_private=true&layout=compact"/>
-</div>
+---
 
-## 📈 Activity:
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mtauha&theme=react-dark&hide_border=true&area=true" width="100%"/>
-</div>
+### What I work on
 
-## 🎖️ LeetCode:
-<div align="center">
-  <img src="https://leetcard.jacoblin.cool/MuhammadTauha?theme=dark&border=0&radius=10" alt="LeetCode Stats"/><br/><br/>
-  <img src="https://leetcode-badge-showcase.vercel.app/api?username=MuhammadTauha&theme=dark&animated=true" alt="LeetCode Badges"/>
-</div>
+- **Data engineering:** extraction from messy sources, append-only raw layers, dbt modelling (staging → marts, SCD Type-2 snapshots), warehouses on BigQuery and DuckDB/MotherDuck.
+- **AI engineering:** MCP servers, LLM agents with tool use, and reusable analysis skills that turn a model into a domain assistant.
+- **Backend & APIs:** FastAPI services with caching, rate limiting, typed errors and CI/CD to production.
+- **Infrastructure:** Docker, Terraform, GCP (Cloud Run, Cloud Scheduler) and GitHub Actions with Workload Identity Federation.
 
-## 🐍 Contributions:
-<div align="center">
-  <img src="https://raw.githubusercontent.com/mtauha/mtauha/output/github-snake-dark.svg" alt="Snake animation"/>
-</div>
+---
+
+### psxdata: open-source PSX data platform
+
+```mermaid
+flowchart LR
+    PSX[(PSX website)] --> SDK[psxdata<br/>Python SDK]
+    SDK --> API[psxdata-api<br/>FastAPI REST]
+    SDK --> WH[psx-warehouse<br/>dbt + BigQuery]
+    SDK --> MCP[psxdata-mcp<br/>MCP server + DuckDB]
+    WH --> MCP
+    MCP --> AI[Claude / Cursor / VS Code]
+```
+
+#### [psxdata](https://github.com/psxdata/psxdata): Python library
+
+[![PyPI](https://img.shields.io/pypi/v/psxdata)](https://pypi.org/project/psxdata/)
+[![Downloads](https://static.pepy.tech/personalized-badge/psxdata?period=total&units=INTERNATIONAL_SYSTEM&left_color=GREY&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/psxdata)
+[![Stars](https://img.shields.io/github/stars/psxdata/psxdata?style=flat)](https://github.com/psxdata/psxdata)
+
+Historical OHLCV, live quotes, index constituents, sectors, fundamentals, debt market and margin-eligible stocks for 1,000+ PSX tickers, returned as pandas DataFrames.
+
+- Parses columns dynamically from the HTML, so it survives PSX layout changes that break other scrapers
+- Disk cache, retries with exponential backoff, rate limiting and proxy support (HTTP / SOCKS5)
+- About 9,000 PyPI downloads a month
+
+#### [psxdata-api](https://github.com/psxdata/psxdata-api): REST API
+
+A public FastAPI service on top of the SDK. **[Live API](https://psxdata-api.fastapicloud.dev)**
+
+- Consistent response envelope with typed error codes and `Retry-After` handling
+- Per-IP rate limiting and response caching
+- Docker image on Docker Hub, CI/CD and auto-deploy, logs exported hourly to MotherDuck
+
+#### [psx-warehouse](https://github.com/psxdata/psx-warehouse): analytics warehouse
+
+Turns raw PSX data into tested, analysis-ready marts. **[dbt docs & lineage](https://psxdata.github.io/psx-warehouse/)**
+
+- Append-only, hash-diffed raw layer, so a restated price is never silently overwritten
+- dbt staging → marts: a Type-2 ticker snapshot (handles delistings), dimensions and five fact tables (OHLCV, index membership, sector daily, valuation daily, restatement history)
+- BigQuery in production, DuckDB/MotherDuck for local dev
+- Terraform-managed GCP: Cloud Run Job, Cloud Scheduler, least-privilege service account, keyless deploys via Workload Identity Federation
+
+#### [psxdata-mcp](https://github.com/psxdata/psxdata-mcp): MCP server for AI assistants
+
+Gives Claude, Cursor and VS Code access to PSX data. The assistant loads data into a private in-memory DuckDB and answers questions with SQL.
+
+- 11 tools (prices, screener, indices, sectors, fundamentals, sandboxed SQL) with row and time limits
+- 6 analysis skills: stock tearsheets, value/dividend/momentum screens, Shariah screens, multi-stock comparisons, daily market wraps
+- One-click installs: Claude Code plugin, Claude Desktop bundle (`.mcpb`), Cursor and VS Code
+- A hosted, invite-only version with OAuth sign-in that also exposes the warehouse marts
+
+Docs for the whole platform: **[psxdata.mintlify.app](https://psxdata.mintlify.app)**
+
+---
+
+### Tech stack
+
+| Area | Tools |
+| --- | --- |
+| **Languages** | Python, SQL, Go, TypeScript |
+| **Data** | dbt, BigQuery, DuckDB, MotherDuck, PostgreSQL, pandas |
+| **AI** | Model Context Protocol (MCP), LLM agents & tool use, Claude |
+| **Backend** | FastAPI, REST API design, web scraping |
+| **Cloud & DevOps** | GCP (Cloud Run, Cloud Scheduler), AWS, Terraform, Docker, GitHub Actions |
